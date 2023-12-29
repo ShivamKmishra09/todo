@@ -1,6 +1,9 @@
 {% extends 'base.html' %} {% block body %}
 
-<div class="container">
+<div
+  class="container"
+  style="margin-top: 50px; padding: 20px; background-color: #f6b8b8"
+>
   <h2>Update TO-DO</h2>
   <form action="/update/{{todo.sno}}" method="POST">
     <div class="mb-3">

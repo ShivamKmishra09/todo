@@ -1,6 +1,9 @@
 {% extends 'base.html' %} {% block body %}
 
-<div class="container">
+<div
+  class="container"
+  style="padding: 20px; margin-top: 50px; background-color: #c3e19f"
+>
   <h2>Add a TO-DO</h2>
   <form action="/" method="POST">
     <div class="mb-3">
@@ -21,7 +24,16 @@
     <button type="submit" class="btn btn-outline-dark">Submit</button>
   </form>
 </div>
-<div class="container">
+<div
+  class="container"
+  style="
+    padding: 15px;
+    padding-bottom: 0px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    background-color: #e19f9f;
+  "
+>
   <h2>Your TO-DOs</h2>
   {% if allTOdo|length ==0 %}
   <div class="alert alert-dark" role="alert">
